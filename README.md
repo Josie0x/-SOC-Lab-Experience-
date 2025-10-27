@@ -31,14 +31,27 @@
 ---
 
 ### 3. Cuidado (Crypto-Mining / PUAs)
-- **Platform:** [HackTheBox Sherlock](https://labs.hackthebox.com/achievement/sherlock/2781127/747)  
+- **Platform:** [HackTheBox Sherlock](https://tryhackme.com/room/windowsloggingforsoc)    
 - **Overview:** A user triggered multiple alerts after downloading several potentially unwanted applications (PUAs). The SOC team monitored network traffic from the victim workstation (`(victim IP)`) and traced downloads from an external attacker server (`(attacker IP)`). The first malicious file (`(first file)`) was retrieved using the attacker's `(function)` over port `(port)`. The script verified writable directories by creating test files, the second of which was `(second test file size)`. CPU architecture was determined with `(cpu command)`, followed by downloading a specific binary (`(downloaded file)`) and disabling any existing mining service (`(disable command)`). Analysis revealed the malware was packed with version `(packer version)`, and the unpacked malware had an entropy of `(entropy value)`. The malware file (`(malware filename)`) was submitted to VirusTotal. The main malware activity maps to MITRE ATT&CK technique `(MITRE ID)`.  
 
 - **Skills:**  
   - Network traffic monitoring and packet analysis (Wireshark / TCP stream analysis)  
   - Malware behavior analysis (payload identification, unpacking, entropy calculation)  
   - System command inspection (`uname -mp`, `systemctl disable`)  
-  - MITRE ATT&CK mapping (T1496 – Compute Hijacking)  
-  
+  - MITRE ATT&CK mapping (T1496 – Compute Hijacking)
+ 
+---
+
+  ### 4. Windows Logging for SOC
+- **Platform:** [TryHackMe — Windows Logging for SOC](https://tryhackme.com/room/windowsloggingforsoc)  
+- **Overview:** Practiced monitoring and analyzing Windows event logs to detect suspicious activity. The lab focused on key Event Viewer logs (`(log type)`), Sysmon telemetry (`(Sysmon events)`), and PowerShell operational logs (`(PowerShell log type)`) to identify potential malicious activity on a Windows host (`(victim hostname / IP)`). Activities included reconstructing process execution (`(example process)`), extracting IOCs (`(example IOC)`), and mapping observed events to a timeline for SOC reporting. The lab also emphasized translating logs into actionable SIEM alerts and hunting hypotheses.  
+
+- **Skills:**  
+  - Windows event log analysis (Application, Security, System, PowerShell, Sysmon)  
+  - Sysmon & PowerShell telemetry interpretation  
+  - IOC extraction and SIEM-ready alert development  
+  - Incident timeline reconstruction and SOC reporting  
+  - Threat hunting and detection validation
+
 
 
