@@ -52,6 +52,20 @@
   - IOC extraction and SIEM-ready alert development  
   - Incident timeline reconstruction and SOC reporting  
   - Threat hunting and detection validation
+ 
+    ---
+
+  ### 5. PhishNet — Sherlock Scenario 🎣
+- **Platform:** [HackTheBox — PhishNet](https://www.hackthebox.com/)  
+- **Overview:** Investigated a phishing email containing a suspicious link and a `.zip` attachment. The lab focused on analyzing raw email headers (originating IP `(originating IP)`, relayed by `(mail server)`), verifying sender and `Reply-To` addresses (`(sender email)` / `(reply-to email)`), checking SPF (`(SPF result)`), and safely decoding the base64 ZIP attachment (`(base64 snippet)`) to reveal `(zip filename)` → `(malicious inner filename)`. Activities included computing the SHA‑256 hash (`(SHA-256 hash)`), reviewing VirusTotal detections, identifying phishing URL domain `(phishing URL domain)` and fake company branding `(fake company name)`, and mapping the attack to MITRE ATT&CK (primary: `(MITRE technique)`).
+
+- **Skills:**  
+  - Email header analysis and sender verification (Received chain, SPF, Reply-To)  
+  - Safe artifact extraction and decoding (base64 → unzip) using CyberChef  
+  - File hashing and threat intelligence correlation (SHA‑256 → VirusTotal)  
+  - Phishing indicator identification (malicious URLs, fake company names, social engineering cues)  
+  - Mapping observed artifacts to MITRE ATT&CK techniques and documenting SOC-relevant findings
+
 
 
 
