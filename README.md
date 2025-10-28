@@ -53,7 +53,7 @@
   - Incident timeline reconstruction and SOC reporting  
   - Threat hunting and detection validation
  
-    ---
+  ---
 
   ### 5. PhishNet — Sherlock Scenario 🎣
 - **Platform:** [HackTheBox — PhishNet](https://www.hackthebox.com/)  
@@ -65,7 +65,19 @@
   - File hashing and threat intelligence correlation (SHA‑256 → VirusTotal)  
   - Phishing indicator identification (malicious URLs, fake company names, social engineering cues)  
   - Mapping observed artifacts to MITRE ATT&CK techniques and documenting SOC-relevant findings
+ 
+ ---
 
+ ### 5. Investigate Web Attack — LetsDefend 🕵️‍♂️
+- **Platform:** [LetsDefend — Web Attack Challenge](https://letsdefend.io/)  
+- **Overview:** Investigated suspicious web activity recorded in the server access log (`/root/Desktop/ChallengeFile/access.log`). The lab focused on identifying automated reconnaissance activity, analyzing directory enumeration and login attempts, observing potential code injection activity, and checking for persistency mechanisms. Activities included timeline analysis, extracting attacker actions, mapping the sequence of attacks, and correlating findings to MITRE ATT&CK techniques.
 
-
+- **Skills:**  
+  - Log analysis and attacker activity reconstruction (`access.log`)  
+  - Detection of automated web reconnaissance  
+  - Directory and brute-force discovery assessment  
+  - Code injection identification and payload extraction  
+  - Persistency mechanism identification from web logs  
+  - Mapping observed artifacts and attack patterns to MITRE ATT&CK techniques and documenting SOC-relevant findings
+  
 
