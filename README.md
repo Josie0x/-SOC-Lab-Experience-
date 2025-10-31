@@ -18,9 +18,12 @@
   - Detection of automated web reconnaissance  
   - Directory and brute-force discovery assessment  
   - Code injection identification and payload extraction  
-  - Persistency mechanism identification from web logs  
+  - Persistency mechanism identification from web logs
+ ---
+
+ <img width="525" height="222" alt="Screenshot 2025-10-31 at 2 14 30 PM" src="https://github.com/user-attachments/assets/22d4c1fb-80ef-4aaf-8584-8e40c2d53864" />
   
-### 2. Threat Hunting Simulation - Supply Chain Compromise
+  ### 2. Threat Hunting Simulation - Supply Chain Compromise
 - **Platform:** [TryHackMe — Threat Hunting Simulation](https://tryhackme.com/threat-hunting-sim/public-summary/5fadada12350de7b6000afba6a50546bd30f715cd232db5d62284da9ce8ce11ba4c498d97a7d2e5b843418477fd1d598)  
 - **Overview:** Identified initial access via a **compromised third‑party package**, observed silent payload staging, and confirmed persistence mechanisms. Mapped the kill chain end-to-end, validated the hunting hypothesis, and collected actionable IOCs. 🕵🏾‍♀️  
 
@@ -35,8 +38,8 @@
   - **Staging:** low‑noise payload deployment  
   - **Persistence:** backdoor/service established  
   - **Outcome:** timeline, IOCs, mitigation-ready detections  
-
 ---
+  -<img width="357" height="377" alt="Screenshot 2025-10-31 at 2 17 42 PM" src="https://github.com/user-attachments/assets/25173242-ccf8-44d4-b833-9b5e65150e5b" />
 
 ### 3. Sherlock — Noxious (LLMNR Poisoning)
 - **Platform:** [HackTheBox Sherlock](https://labs.hackthebox.com/achievement/sherlock/2781127/747)  
