@@ -49,8 +49,8 @@
   - Incident documentation and SOC reporting  
 
 ---
-  <img width="510" height="388" alt="Screenshot 2025-10-31 at 1 51 51 PM" src="https://github.com/user-attachments/assets/b285a956-962a-4f3d-b019-bf3aa03904cc" />
-  
+<img width="375" height="372" alt="Screenshot 2025-10-31 at 2 05 31 PM" src="https://github.com/user-attachments/assets/0e02e49d-95b1-4916-b2c8-0b8f072418eb" />
+
 ### 4. Cuidado (Crypto-Mining / PUAs)
 - **Platform:** [HackTheBox Sherlock](https://labs.hackthebox.com/achievement/sherlock/2781127/967)    
 - **Overview:** A user triggered multiple alerts after downloading several potentially unwanted applications (PUAs). The SOC team monitored network traffic from the victim workstation (`(victim IP)`) and traced downloads from an external attacker server (`(attacker IP)`). The first malicious file (`(first file)`) was retrieved using the attacker's `(function)` over port `(port)`. The script verified writable directories by creating test files, the second of which was `(second test file size)`. CPU architecture was determined with `(cpu command)`, followed by downloading a specific binary (`(downloaded file)`) and disabling any existing mining service (`(disable command)`). Analysis revealed the malware was packed with version `(packer version)`, and the unpacked malware had an entropy of `(entropy value)`. The malware file (`(malware filename)`) was submitted to VirusTotal. The main malware activity maps to MITRE ATT&CK technique `(MITRE ID)`.  
@@ -75,8 +75,10 @@
   - Threat hunting and detection validation
  ---
 
+<img width="377" height="374" alt="Screenshot 2025-10-31 at 2 02 27 PM" src="https://github.com/user-attachments/assets/c27d5387-f65b-43ef-b737-d234d666e307" />
+
 ### 6. PhishNet — Sherlock Scenario 🎣
-- **Platform:** [HackTheBox — PhishNet](https://labs.hackthebox.com/achievement/sherlock/2781127/967)  
+- **Platform:** [HackTheBox — PhishNet](https://labs.hackthebox.com/achievement/sherlock/2781127/985)  
 - **Overview:** Investigated a phishing email containing a suspicious link and a `.zip` attachment. The lab focused on analyzing raw email headers (originating IP `(originating IP)`, relayed by `(mail server)`), verifying sender and `Reply-To` addresses (`(sender email)` / `(reply-to email)`), checking SPF (`(SPF result)`), and safely decoding the base64 ZIP attachment (`(base64 snippet)`) to reveal `(zip filename)` → `(malicious inner filename)`. Activities included computing the SHA‑256 hash (`(SHA-256 hash)`), reviewing VirusTotal detections, identifying phishing URL domain `(phishing URL domain)` and fake company branding `(fake company name)`, and mapping the attack to MITRE ATT&CK (primary: `(MITRE technique)`).
 
 - **Skills:**  
