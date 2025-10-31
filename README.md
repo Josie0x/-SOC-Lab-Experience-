@@ -49,9 +49,10 @@
   - Incident documentation and SOC reporting  
 
 ---
-
+  <img width="510" height="388" alt="Screenshot 2025-10-31 at 1 51 51 PM" src="https://github.com/user-attachments/assets/b285a956-962a-4f3d-b019-bf3aa03904cc" />
+  
 ### 4. Cuidado (Crypto-Mining / PUAs)
-- **Platform:** [HackTheBox Sherlock](https://tryhackme.com/room/windowsloggingforsoc)    
+- **Platform:** [HackTheBox Sherlock](https://labs.hackthebox.com/achievement/sherlock/2781127/967)    
 - **Overview:** A user triggered multiple alerts after downloading several potentially unwanted applications (PUAs). The SOC team monitored network traffic from the victim workstation (`(victim IP)`) and traced downloads from an external attacker server (`(attacker IP)`). The first malicious file (`(first file)`) was retrieved using the attacker's `(function)` over port `(port)`. The script verified writable directories by creating test files, the second of which was `(second test file size)`. CPU architecture was determined with `(cpu command)`, followed by downloading a specific binary (`(downloaded file)`) and disabling any existing mining service (`(disable command)`). Analysis revealed the malware was packed with version `(packer version)`, and the unpacked malware had an entropy of `(entropy value)`. The malware file (`(malware filename)`) was submitted to VirusTotal. The main malware activity maps to MITRE ATT&CK technique `(MITRE ID)`.  
 
 - **Skills:**  
@@ -73,8 +74,6 @@
   - Incident timeline reconstruction and SOC reporting  
   - Threat hunting and detection validation
  ---
-
-  <img width="510" height="388" alt="Screenshot 2025-10-31 at 1 51 51 PM" src="https://github.com/user-attachments/assets/b285a956-962a-4f3d-b019-bf3aa03904cc" />
 
 ### 6. PhishNet — Sherlock Scenario 🎣
 - **Platform:** [HackTheBox — PhishNet](https://labs.hackthebox.com/achievement/sherlock/2781127/967)  
