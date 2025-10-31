@@ -1,6 +1,25 @@
-## 🧪 LABS
+## 🧪 LAB MUSEUM 
 
-### 1. Threat Hunting Simulation - Supply Chain Compromise
+<img width="768" height="281" alt="Screenshot 2025-10-31 at 1 40 05 PM" src="https://github.com/user-attachments/assets/ea4c70d5-40a2-4946-ac6e-26a862b83a87" />
+
+### 1.Web Attack Investigation Lab — LetsDefend 🕵️‍♂️
+- **Platform:** [LetsDefend — My Reward](https://app.letsdefend.io/my-rewards/detail/3ee3349b6e5345d885c044e173f017cd)
+- **Overview:** Investigated web attacks and analyzed suspicious activity as a SOC analyst. 
+  - OWASP  
+  - Detecting SQL Injection Attacks  
+  - Detecting Cross Site Scripting (XSS) Attacks  
+  - Detecting Command Injection Attacks  
+  - Detecting Insecure Direct Object Reference (IDOR) Attacks  
+  - Detecting RFI & LFI Attacks  
+
+- **Skills:**  
+  - Log analysis and attacker activity reconstruction (`access.log`)  
+  - Detection of automated web reconnaissance  
+  - Directory and brute-force discovery assessment  
+  - Code injection identification and payload extraction  
+  - Persistency mechanism identification from web logs  
+  
+### 2. Threat Hunting Simulation - Supply Chain Compromise
 - **Platform:** [TryHackMe — Threat Hunting Simulation](https://tryhackme.com/threat-hunting-sim/public-summary/5fadada12350de7b6000afba6a50546bd30f715cd232db5d62284da9ce8ce11ba4c498d97a7d2e5b843418477fd1d598)  
 - **Overview:** Identified initial access via a **compromised third‑party package**, observed silent payload staging, and confirmed persistence mechanisms. Mapped the kill chain end-to-end, validated the hunting hypothesis, and collected actionable IOCs. 🕵🏾‍♀️  
 
@@ -18,7 +37,7 @@
 
 ---
 
-### 2. Sherlock — Noxious (LLMNR Poisoning)
+### 3. Sherlock — Noxious (LLMNR Poisoning)
 - **Platform:** [HackTheBox Sherlock](https://labs.hackthebox.com/achievement/sherlock/2781127/747)  
 - **Overview:** Detected and investigated unusual LLMNR traffic on the internal Active Directory VLAN. A rogue host (`(hostname)` at `(IP address)`) captured an NTLMv2 hash from `(username)` due to a typo when navigating a file share (`(typo)`). Extracted NTLM artifacts from the PCAP and successfully cracked the password (`(password)`) to confirm its complexity and verify attacker access.  
 
@@ -30,7 +49,7 @@
 
 ---
 
-### 3. Cuidado (Crypto-Mining / PUAs)
+### 4. Cuidado (Crypto-Mining / PUAs)
 - **Platform:** [HackTheBox Sherlock](https://tryhackme.com/room/windowsloggingforsoc)    
 - **Overview:** A user triggered multiple alerts after downloading several potentially unwanted applications (PUAs). The SOC team monitored network traffic from the victim workstation (`(victim IP)`) and traced downloads from an external attacker server (`(attacker IP)`). The first malicious file (`(first file)`) was retrieved using the attacker's `(function)` over port `(port)`. The script verified writable directories by creating test files, the second of which was `(second test file size)`. CPU architecture was determined with `(cpu command)`, followed by downloading a specific binary (`(downloaded file)`) and disabling any existing mining service (`(disable command)`). Analysis revealed the malware was packed with version `(packer version)`, and the unpacked malware had an entropy of `(entropy value)`. The malware file (`(malware filename)`) was submitted to VirusTotal. The main malware activity maps to MITRE ATT&CK technique `(MITRE ID)`.  
 
@@ -42,7 +61,7 @@
  
 ---
 
-  ### 4. Windows Logging for SOC
+  ### 5. Windows Logging for SOC
 - **Platform:** [TryHackMe — Windows Logging for SOC](https://tryhackme.com/room/windowsloggingforsoc)  
 - **Overview:** Practiced monitoring and analyzing Windows event logs to detect suspicious activity. The lab focused on key Event Viewer logs (`(log type)`), Sysmon telemetry (`(Sysmon events)`), and PowerShell operational logs (`(PowerShell log type)`) to identify potential malicious activity on a Windows host (`(victim hostname / IP)`). Activities included reconstructing process execution (`(example process)`), extracting IOCs (`(example IOC)`), and mapping observed events to a timeline for SOC reporting. The lab also emphasized translating logs into actionable SIEM alerts and hunting hypotheses.  
 
@@ -52,11 +71,12 @@
   - IOC extraction and SIEM-ready alert development  
   - Incident timeline reconstruction and SOC reporting  
   - Threat hunting and detection validation
- 
-  ---
+ ---
 
-  ### 5. PhishNet — Sherlock Scenario 🎣
-- **Platform:** [HackTheBox — PhishNet](https://www.hackthebox.com/)  
+  <img width="510" height="388" alt="Screenshot 2025-10-31 at 1 51 51 PM" src="https://github.com/user-attachments/assets/b285a956-962a-4f3d-b019-bf3aa03904cc" />
+
+### 6. PhishNet — Sherlock Scenario 🎣
+- **Platform:** [HackTheBox — PhishNet](https://labs.hackthebox.com/achievement/sherlock/2781127/967)  
 - **Overview:** Investigated a phishing email containing a suspicious link and a `.zip` attachment. The lab focused on analyzing raw email headers (originating IP `(originating IP)`, relayed by `(mail server)`), verifying sender and `Reply-To` addresses (`(sender email)` / `(reply-to email)`), checking SPF (`(SPF result)`), and safely decoding the base64 ZIP attachment (`(base64 snippet)`) to reveal `(zip filename)` → `(malicious inner filename)`. Activities included computing the SHA‑256 hash (`(SHA-256 hash)`), reviewing VirusTotal detections, identifying phishing URL domain `(phishing URL domain)` and fake company branding `(fake company name)`, and mapping the attack to MITRE ATT&CK (primary: `(MITRE technique)`).
 
 - **Skills:**  
@@ -68,16 +88,6 @@
  
  ---
 
- ### 5. Investigate Web Attack — LetsDefend 🕵️‍♂️
-- **Platform:** [LetsDefend — Web Attack Challenge](https://letsdefend.io/)  
-- **Overview:** Investigated suspicious web activity recorded in the server access log (`/root/Desktop/ChallengeFile/access.log`). The lab focused on identifying automated reconnaissance activity, analyzing directory enumeration and login attempts, observing potential code injection activity, and checking for persistency mechanisms. Activities included timeline analysis, extracting attacker actions, mapping the sequence of attacks, and correlating findings to MITRE ATT&CK techniques.
 
-- **Skills:**  
-  - Log analysis and attacker activity reconstruction (`access.log`)  
-  - Detection of automated web reconnaissance  
-  - Directory and brute-force discovery assessment  
-  - Code injection identification and payload extraction  
-  - Persistency mechanism identification from web logs  
-  - Mapping observed artifacts and attack patterns to MITRE ATT&CK techniques and documenting SOC-relevant findings
   
 
