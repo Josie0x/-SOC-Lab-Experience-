@@ -1,4 +1,5 @@
-## 🧪 LAB MUSEUM 
+# 🧪 LAB MUSEUM 
+
 
 <img width="768" height="281" alt="Screenshot 2025-10-31 at 1 40 05 PM" src="https://github.com/user-attachments/assets/ea4c70d5-40a2-4946-ac6e-26a862b83a87" />
 
