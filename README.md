@@ -1,6 +1,43 @@
 # 🧪 LAB MUSEUM 
 
 
+<img width="1192" height="666" alt="Screenshot 2025-11-30 at 4 20 52 PM" src="https://github.com/user-attachments/assets/c6283782-293f-4a30-b6aa-9d3b7a5cfd8b" />
+
+
+# TryHackMe: Warzone 2 🕵️‍♀️💻🛡️⚠️ 
+
+## Objective - https://tryhackme.com/room/warzonetwo
+Worked as a Tier 1 SOC analyst to triage IDS/IPS alerts, investigate network traffic, and determine whether the activity in the PCAP represented true positives.
+
+---
+
+## Tools Used
+- **Brim** – Imported and analyzed PCAPs, filtered alerts, and reviewed event data.  
+- **Network Miner** – Extracted files and network artifacts from the capture.  
+- **Wireshark** – Used for deeper packet-level inspection when needed.  
+- **CyberChef** – Defanged URLs/IPs for safe reporting.  
+- **VirusTotal** – Checked file hashes and confirmed whether payloads were malicious.
+
+---
+
+## What I Did
+- Loaded the PCAP into Brim and filtered alert events.  
+- Grouped alerts by category and severity to prioritize investigation.  
+- Reviewed HTTP traffic to trace downloads, URIs, and user-agent strings.  
+- Extracted artifacts from the PCAP and validated them with VirusTotal.  
+- Identified malicious domains and IPs and separated them from benign traffic.  
+- 🧛🏼‍♀️ Defanged indicators for clean reporting and documentation.
+
+---
+
+## Key Takeaways 
+- How to extract and analyze artifacts directly from PCAPs.  
+- How to validate files, domains, and infrastructure using VirusTotal.  
+- How to safely handle and report indicators using CyberChef.  
+- How to distinguish true positives from noise in a SOC workflow.
+
+
+
 <img width="768" height="281" alt="Screenshot 2025-10-31 at 1 40 05 PM" src="https://github.com/user-attachments/assets/ea4c70d5-40a2-4946-ac6e-26a862b83a87" />
 
 ### 1.Web Attack Investigation Lab — LetsDefend 🕵️‍♂️
