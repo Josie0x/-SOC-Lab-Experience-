@@ -27,17 +27,13 @@ Worked as a Tier 1 SOC analyst to triage IDS/IPS alerts, investigate network tra
 - Extracted artifacts from the PCAP and validated them with VirusTotal.  
 - Identified malicious domains and IPs and separated them from benign traffic.  
 - 🧛🏼‍♀️ Defanged indicators for clean reporting and documentation.
-
 ---
-
 ## Key Takeaways 
 - How to extract and analyze artifacts directly from PCAPs.  
 - How to validate files, domains, and infrastructure using VirusTotal.  
 - How to safely handle and report indicators using CyberChef.  
 - How to distinguish true positives from noise in a SOC workflow.
-
-
-
+---
 <img width="768" height="281" alt="Screenshot 2025-10-31 at 1 40 05 PM" src="https://github.com/user-attachments/assets/ea4c70d5-40a2-4946-ac6e-26a862b83a87" />
 
 ### 1.Web Attack Investigation Lab — LetsDefend 🕵️‍♂️
